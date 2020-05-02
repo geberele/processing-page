@@ -1,0 +1,36 @@
+{
+  "name": "processing-page",
+  "version": "1.0.0",
+  "description": "Gets the processing page",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geberele/processing-page.git"
+  },
+  "author": "Gabriele Manna",
+  "license": "ISC",
+  "homepage": "https://github.com/geberele/processing-page",
+  "scripts": {
+    "start": "node build/scripts/start.js",
+    "test": "jest src/*",
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'",
+    "tslint--fix": "npm run tslint -- --fix",
+    "build": "npm run build:js",
+    "build:js": "babel --out-dir build ./src --extensions \".ts\" --ignore \"**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.1",
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^13.13.2",
+    "jest": "^25.4.0",
+    "minimist": "^1.2.5",
+    "tslint": "^6.1.2",
+    "tslint-eslint-rules-recommended": "^1.2.2",
+    "typescript": "^3.8.3"
+  }
+}

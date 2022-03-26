@@ -28,7 +28,7 @@
     "@types/minimist": "^1.2.0",
     "@types/node": "^13.13.2",
     "jest": "^25.4.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "tslint": "^6.1.2",
     "tslint-eslint-rules-recommended": "^1.2.2",
     "typescript": "^3.8.3"
